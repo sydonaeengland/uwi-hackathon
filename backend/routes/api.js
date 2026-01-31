@@ -1,8 +1,8 @@
 import express from 'express';
 import multer from 'multer';
 import { scanText, scanUrl, extractTextFromImage } from '../utils/scanners.js';
-import { db } from '../backend/config/database.js';
-import { reports } from '../backend/schema.js';
+import { db } from '../config/database.js';
+import { reports } from '../../schema.js';
 
 const router = express.Router();
 
